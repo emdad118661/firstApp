@@ -29,5 +29,5 @@ Route::get('/register',[PagesController::class,'register'])->name('registration'
 // Student folder's routing
 Route::get('/student/create',[StudentController::class,'create']);
 Route::get('/student/edit',[StudentController::class,'edit']);
-Route::get('/student/get/{id?}/{name}/{dob}',[StudentController::class,'get']);
+Route::get('/student/get/{id?}/{name}/{dob}',[StudentController::class,'get'])->name('student.details');
 Route::get('/student/list',[StudentController::class,'list'])->name('student.list');
